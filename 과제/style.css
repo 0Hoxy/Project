@@ -1,3 +1,4 @@
+}
 * {
   margin: 0;
   padding: 0;
@@ -96,7 +97,7 @@ body {
 .aside {
   float: left;
   width: 220px;
-  height: 800px;
+  height: 1000px;
   background: #fb8c00;
   font-size: 15px;
   overflow: auto;
@@ -118,20 +119,19 @@ body {
 .section1 {
   float: left;
   width: calc(100% - 220px);
-  height: 800px;
+  height: 1000px;
   background: #ff9800;
   flex: 1 0 auto;
   overflow: auto;
 }
 
 .section1 .video {
-  width: 650px;
-  height: 365px;
-  background: #000;
-  margin: 5px;
-  
+  width: 100%;
+  display: inline
 }
-
+.section1 .video iframe {
+  margin: 10px -5px 0px 15px;
+}
 .footer {
   clear: both;
   width: 100%;
@@ -139,3 +139,4 @@ body {
   line-height: 100px;
   background: #ffb74d;
 }
+
