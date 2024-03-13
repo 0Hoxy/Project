@@ -16,7 +16,7 @@ body {
 
 .header {
   position: relative;
-  width: 100vh%;
+  width: 100%;
   height: 60px;
   top: 0;
   left: 0;
@@ -119,9 +119,17 @@ body {
   float: left;
   width: calc(100% - 220px);
   height: 800px;
-  line-height: 600px;
   background: #ff9800;
   flex: 1 0 auto;
+  overflow: auto;
+}
+
+.section1 .video {
+  width: 650px;
+  height: 365px;
+  background: #000;
+  margin: 5px;
+  
 }
 
 .footer {
