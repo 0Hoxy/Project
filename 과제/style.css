@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 60px;
   top: 0;
@@ -71,7 +71,6 @@ body {
   color: #fff;
   height: 26px;
   width: 26px;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,24 +86,15 @@ body {
   float: left;
   width: 20%;
   height: 800px;
-  line-height: 6rgb (0, 0, 0);
   background: #fb8c00;
 }
 
 .section1 {
   float: left;
   width: 80%;
-  height: 400px;
-  line-height: 300px;
+  height: 800px;
+  line-height: 600px;
   background: #ff9800;
-}
-
-.section2 {
-  float: left;
-  width: 80%;
-  height: 400px;
-  line-height: 300px;
-  background: #ffa726;
 }
 
 .footer {
@@ -113,5 +103,4 @@ body {
   height: 100px;
   line-height: 100px;
   background: #ffb74d;
-  position: ab;
 }
