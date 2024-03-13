@@ -10,7 +10,7 @@ body {
 #wrap {
   font-size: 20px;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .header {
@@ -24,7 +24,15 @@ body {
   align-items: center;
   margin: 0 auto;
 }
-
+.header img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 10px;
+  margin-right: px;
+  position: relative;
+}
 .logo {
   font-size: 25px;
   color: #ededed;
@@ -84,14 +92,29 @@ body {
 }
 .aside {
   float: left;
-  width: 20%;
+  width: 220px;
   height: 800px;
   background: #fb8c00;
+  font-size: 15px;
+  overflow: auto;
+}
+.aside ul {
+  list-style-type: none;
+  line-height: 2em;
+  margin: 10px 15px;
+  color: #000;
+}
+.aside ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.aside ul li a:hover {
+  color: white;
 }
 
 .section1 {
   float: left;
-  width: 80%;
+  width: 100%;
   height: 800px;
   line-height: 600px;
   background: #ff9800;
