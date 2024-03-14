@@ -140,15 +140,7 @@ body {
   color: #000;
   text-align: center;
 }
-.footer-content {
-  display: flex;
-  align-items: center;
-}
-
 .icon {
-  margin-right: 10px;
-}
-
-.text p {
-  margin: 0;
+  width: 20px;
+  height: auto;
 }
