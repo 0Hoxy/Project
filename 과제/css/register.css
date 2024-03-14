@@ -17,6 +17,7 @@ body {
   width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  backdrop-filter: blur(20px);
 }
 
 .login-container h2 {
