@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: #d1c4e9;
   min-width: 750px;
 }
 
@@ -20,10 +19,12 @@ body {
   height: 60px;
   top: 0;
   left: 0;
-  background: #ef6c00;
+  background: #ffffff;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  border-bottom: 1px solid black;
+  background-image: url(https://yt3.googleusercontent.com/S26SOMWW3Daq4WuBE0TL-SREkH-vUdUyxzIDTqHIyVXoz4UFgTNdUVHwr97I6Ubp2e9dUDaGOw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj);
 }
 .header img {
   width: 45px;
@@ -33,10 +34,11 @@ body {
   margin: 10px;
   margin-right: -16px;
   position: relative;
+  border: 1px solid black;
 }
 .logo {
   font-size: 25px;
-  color: #ededed;
+  color: #000000;
   text-decoration: none;
   font-weight: 900;
   position: relative;
@@ -67,7 +69,7 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 .login {
   position: relative;
@@ -79,7 +81,7 @@ body {
 
 .login a {
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   height: 26px;
   width: 26px;
   display: flex;
@@ -90,16 +92,18 @@ body {
   line-height: 18px;
   position: absolute;
   right: 20px;
-  background: #ccc;
+  background: #000000;
   text-decoration: none;
+  border: 1px solid black;
 }
 .aside {
   float: left;
-  width: 220px;
+  width: 219px;
   height: 1000px;
-  background: #fb8c00;
+  background: #ffffff;
   font-size: 15px;
   overflow: auto;
+  border-right: 1px solid black;
 }
 .aside ul {
   list-style-type: none;
@@ -112,16 +116,20 @@ body {
   color: #000;
 }
 .aside ul li a:hover {
-  color: white;
+  background-color: rgb(172, 172, 172);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .section1 {
   float: left;
   width: calc(100% - 220px);
   height: 1000px;
-  background: #ff9800;
+  background: #ffffff;
   flex: 1 0 auto;
   overflow: auto;
+  background-image: url();
 }
 
 .section1 .video {
@@ -130,23 +138,30 @@ body {
 }
 .section1 .video iframe {
   margin: 10px -5px 0px 15px;
+  border: 1px solid black;
 }
 .footer {
   clear: both;
   width: 100%;
-  height: 100px;
-  background: #ffb74d;
-  padding: 10px;
+  min-height: auto;
+  background: #dbdbdb;
   color: #000;
+  font-size: 15px;
+  justify-content: space-between;
   text-align: center;
+  position: relative;
+  padding: 10px 0;
 }
 .footer-content {
-  display: flex;
   align-items: center;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
 }
 
 .icon {
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .text p {
