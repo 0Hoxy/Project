@@ -4,33 +4,34 @@
 }
 
 body {
-  min-width: 750px;
-  background-image: url(/과제/images/beach-sea-coast-ocean-horizon-cloud-382750-pxhere.com.jpg);
+  width: 100%;
+  height: 100%;
+  background-image: url(/Project/과제/images/beach-sea-coast-ocean-horizon-cloud-382750-pxhere.com.jpg);
   background-size: cover; /* 이미지를 버튼에 맞게 조절하여 전체 이미지가 보이도록 설정 */
   background-repeat: no-repeat; /* 이미지 반복 방지 */
   background-position: center;
 }
 
 #wrap {
+  position: relative;
   font-size: 20px;
+  width: 90vw;
   color: #fff;
-  width: 1800px;
   height: 1100px;
   text-align: center;
   margin: 0 auto;
 }
 
-.header {
+#header {
   position: relative;
   width: 100%;
   height: 100px;
   top: 0;
-  left: 0;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
 }
-.header img {
+#header img {
   width: 45px;
   height: 45px;
   border: 1px solid;
@@ -40,6 +41,23 @@ body {
   position: relative;
   border: 1px solid black;
 }
+.menuset {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.logoset {
+  float: left;
+  width: 18%;
+}
+.logoset ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.logoset ul li {
+  margin-right: 30px;
+}
 .logo {
   font-size: 25px;
   color: #ffffff;
@@ -47,44 +65,51 @@ body {
   font-weight: 900;
   position: relative;
   margin: 10px 1.5%;
-  margin-right: -70px;
+  margin-right: -60px;
   white-space: nowrap;
   text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
 }
-.nav {
-  margin-left: auto;
-  white-space: nowrap;
+#nav {
+  float: right;
 }
-.nav ul {
+#nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  height: 46px;
-  margin: 0;
-  padding: 0;
+  width: 500px;
+  justify-content: flex-end;
 }
 
-.nav ul li {
+#nav ul li {
   font-weight: 600;
-  font-size: 15px;
   margin: 0 12px;
   text-decoration: none;
   margin: 0 12px;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav ul li a {
+#nav ul li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 15px;
 }
-.nav ul li a:hover {
+#nav ul li a:hover {
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
   border-radius: 10px;
   padding: 5px;
   color: #000;
 }
+#nav ul li a.login:hover {
+  background-color: transparent; /* 배경색 제거 */
+  border: none; /* 테두리 제거 */
+  border-radius: 0; /* 테두리 반경 제거 */
+  padding: 0; /* 안쪽 여백 제거 */
+  color: inherit; /* 글자색을 부모 요소에 상속 */
+}
 
-.login {
+#nav ul li .login {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -92,7 +117,7 @@ body {
   padding-right: 6%;
 }
 
-.login a {
+#nav ul .login i {
   cursor: pointer;
   color: #000000;
   height: 26px;
@@ -103,63 +128,52 @@ body {
   border-radius: 50%;
   font-size: 18px;
   line-height: 18px;
-  position: absolute;
-  right: 20px;
+  position: relative;
   background: #ffffff;
   text-decoration: none;
 }
-.aside {
+#aside {
   float: left;
-  width: 219px;
-  height: 890px;
+  width: 20%;
+  height: 900px;
   background: #081b29;
   font-size: 15px;
-  overflow: auto;
+  overflow: scroll;
   text-align: center;
-  border-left: 2px solid rgb(255, 255, 255);
-  border-top: 2px solid rgb(255, 255, 255);
-  border-bottom: 2px solid rgb(255, 255, 255);
+  word-break: keep-all;
+  min-width: 170px;
   border-top-left-radius: 10px;
 }
-.aside ul {
+#aside ul {
   list-style-type: none;
   line-height: 2em;
-  margin: 10px 15px;
   color: #000;
 }
-.aside ul li a {
+#aside ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-.aside ul li a:hover {
+#aside ul li a:hover {
   background-color: rgb(172, 172, 172);
   border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px;
+  border-radius: 5px;
 }
 
-.section1 {
+#section1 {
   float: left;
-  width: calc(100% - 225px);
-  height: 890px;
+  width: 80%;
+  height: 900px;
   background: #081b29;
-  flex: 1 0 auto;
-  overflow: auto;
-  border: 2px solid rgb(255, 255, 255);
+  overflow: scroll;
 }
 
-.section1 .video {
-  width: 100%;
-  display: inline;
+#section1 .video {
+  display: inline-block;
+  margin-top: 10px;
 }
-.section1 .video iframe {
-  margin: 10px -5px 0px 15px;
-  border: 1px solid black;
-}
-.footer {
+
+#footer {
   clear: both;
-  width: 1796px;
-  min-height: auto;
   background: #ffffff;
   color: #000000;
   font-size: 15px;
@@ -175,13 +189,14 @@ body {
 .footer-content {
   align-items: center;
   font-weight: 600;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
-  display: flex;
 }
 
-.icon {
-  margin-right: 10px;
-  margin-left: 10px;
+.icon + .text {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .text p {
