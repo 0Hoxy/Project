@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(/Project/과제/images/beach-sea-coast-ocean-horizon-cloud-382750-pxhere.com.jpg);
+  background-image: url(/과제/images/beach-sea-coast-ocean-horizon-cloud-382750-pxhere.com.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,16 +27,16 @@ body {
 }
 
 .form-group input {
-  width: calc(100% - 40px); /* container의 padding을 고려하여 너비 조정 */
-  height: 35px; /* 높이 조정 */
-  border-radius: 25px; /* 테두리 반경 조정 */
+  width: calc(100% - 40px);
+  height: 35px;
+  border-radius: 25px;
   background-color: transparent;
   border: none;
   outline: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-size: 15px;
   color: #000000;
-  padding: 0 20px; /* 내부 여백 조정 */
+  padding: 0 20px;
   position: relative;
 }
 
